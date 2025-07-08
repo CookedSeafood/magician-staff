@@ -8,7 +8,7 @@ Magician Staff is an item that shoots explosive bats following the rotation of t
 
 ## The Item
 
-An item where minecraft:custom_data.id is "magician_staff:magician_staff" is considered as an Magician staff.
+An item where minecraft:custom_data.id is "magician_staff:magician_staff" is considered as an magician staff.
 
 An example command that gives an magician staff to yourslef:
 
