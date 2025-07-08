@@ -1,0 +1,50 @@
+{
+    "schemaVersion": 1,
+    "id": "magician-staff",
+    "version": "${version}",
+    "name": "Magician Staff",
+    "description": "An item that shoots explosive bats following the rotation of the shooter for 4 mana when right-clicked.",
+    "authors": [
+        {
+            "name": "CookedSeafood",
+            "contact": {
+                "homepage": "https://github.com/CookedSeafood"
+            }
+        }
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/mod/magician-staff",
+        "sources": "https://github.com/CookedSeafood/magician-staff"
+    },
+    "license": "GNU-GPL-3.0",
+    "icon": "assets/magician-staff/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "net.cookedseafood.magicianstaff.MagicianStaff"
+        ]
+    },
+    "mixins": [
+        "magician-staff.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.14",
+        "minecraft": "~1.21.5",
+        "java": ">=21",
+        "fabric-api": "*",
+        "candy-wrapper": ">=0.7.5",
+        "general-custom-data": ">=0.1.5",
+        "pentamana": ">=0.8.2"
+    },
+    "suggests": {
+        "another-mod": "*"
+    },
+    "custom": {
+        "loom:injected_interfaces": {
+            "net/minecraft/class_1420": [
+                "net/cookedseafood/magicianstaff/api/BatEntityApi"
+            ]
+        }
+    },
+    "accessWidener": "magician-staff.accesswidener"
+}
