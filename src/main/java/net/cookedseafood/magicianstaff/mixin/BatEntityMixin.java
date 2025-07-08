@@ -28,7 +28,7 @@ public abstract class BatEntityMixin implements BatEntityApi {
 
         short fuse = bat.getCustomFuse();
 
-        if (bat.horizontalCollision || bat.verticalCollision || fuse == 0) {
+        if (bat.horizontalCollision || bat.verticalCollision || !bat.getWorld().getOtherEntities(bat, bat.getBoundingBox()).isEmpty() || fuse == 0) {
             bat.explode();
             return;
         }
