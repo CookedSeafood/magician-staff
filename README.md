@@ -5,7 +5,7 @@ Magician Staff is an item that shoots explosive bats following the rotation of t
 ## Feature
 
 - Rotate the head to rotate the bat.
-- Explode on colllision, not on death.
+- Explode on collision, not on death.
 
 ## The Item
 
