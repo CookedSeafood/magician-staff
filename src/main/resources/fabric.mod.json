@@ -33,7 +33,7 @@
         "java": ">=21",
         "fabric-api": "*",
         "candy-wrapper": ">=0.7.5",
-        "general-custom-data": ">=0.1.5",
+        "general-custom-data": ">=0.1.6",
         "pentamana": ">=0.8.2"
     },
     "suggests": {

@@ -13,10 +13,12 @@ public class MagicianStaffConfig {
     public static final float MOVEMENT_SPEED = 1.0f;
     public static final short EXPLOSION_FUSE = 120;
     public static final byte EXPLOSION_RADIUS = 1;
+    public static final boolean IS_PARTICLE_VISIBLE = true;
     public static float manaConsumption;
     public static float movementSpeed;
     public static short explosionFuse;
     public static byte explosionRadius;
+    public static boolean isParticleVisible;
 
     public static int reload() {
         String configString;
@@ -67,6 +69,13 @@ public class MagicianStaffConfig {
             explosionRadius = EXPLOSION_RADIUS;
         }
 
+        if (config.has("isParticleVisible")) {
+            isParticleVisible = config.get("isParticleVisible").getAsBoolean();
+            counter.increment();
+        } else {
+            isParticleVisible = IS_PARTICLE_VISIBLE;
+        }
+
         return counter.intValue();
     }
 
@@ -75,5 +84,6 @@ public class MagicianStaffConfig {
         movementSpeed = MOVEMENT_SPEED;
         explosionFuse = EXPLOSION_FUSE;
         explosionRadius = EXPLOSION_RADIUS;
+        isParticleVisible = IS_PARTICLE_VISIBLE;
     }
 }

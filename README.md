@@ -33,7 +33,8 @@ Below is a template config file `config/magician-staff.json` filled with default
     "manaConsumption": 4.0,
     "movementSpeed": 1.0,
     "explosionFuse": 120,
-    "explosionRadius": 1
+    "explosionRadius": 1,
+    "isParticleVisible": true
 }
 ```
 

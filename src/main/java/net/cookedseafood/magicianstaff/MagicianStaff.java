@@ -27,7 +27,7 @@ public class MagicianStaff implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     public static final byte VERSION_MAJOR = 1;
-    public static final byte VERSION_MINOR = 3;
+    public static final byte VERSION_MINOR = 4;
     public static final byte VERSION_PATCH = 0;
 
     public static final String MOD_NAMESPACE = "magician_staff";
