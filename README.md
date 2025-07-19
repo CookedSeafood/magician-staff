@@ -63,7 +63,3 @@ Below is a template config file `config/magician-staff.json` filled with default
     "isParticleVisible": true
 }
 ```
-
-### `manaConsumption`
-
-Mana consumption per use.
