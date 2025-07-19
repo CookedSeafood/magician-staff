@@ -4,7 +4,8 @@ A **magician staff** is a casting weapon that is used to shoot explosive bats. I
 
 | Statistics ||
 | - | - |
-| Damage | 15 (Explosion) |
+| Melee Damage | 8 |
+| Casting Damage | 15 (Explosion) |
 | Knockback | 0 |
 | Mana Consumption| 4 |
 | Velocity | 1 |
