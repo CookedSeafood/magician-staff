@@ -1,8 +1,20 @@
 # Magician Staff
 
-A **magician staff** is a casting weapon that is used to shoot explosive bats.
+A **magician staff** is a casting weapon that is used to shoot explosive bats. It grants 6 additional mana capacity.
+
+| Statistics ||
+| - | - |
+| Damage | 15 (Explosion) |
+| Knockback | 0 |
+| Mana Consumption| 4 |
+| Velocity | 1 |
+| Rarity | Rare |
 
 ## Usage
+
+### Melee Attack
+
+Same as a netherite sword.
 
 ### Casting Attack
 
