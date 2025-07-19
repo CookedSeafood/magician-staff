@@ -38,16 +38,46 @@ The explosion from the bat does not destroy blocks.
 
 An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is considered as an magician staff.
 
-An example command that gives an magician staff to yourslef:
+### Give Command
 
 ```mcfunction
-/give @s netherite_sword[custom_data={id:"magician_staff:magician_staff"}]
+/give @s minecraft:netherite_sword[custom_data={id:"magician_staff:magician_staff",modifiers:[{attribute:"pentamana:mana_capacity",base:6.0d,operation:"add_value",slot:"mainhand"}]},item_name={text:"Magician Staff"},item_model="minecraft:netherite_shovel",rarity="rare"]
 ```
 
-Another example command for the original design:
+### Loot Table Entry
 
-```mcfunction
-/give @s netherite_sword[custom_data={id:"magician_staff:magician_staff",modifiers:[{attribute:"pentamana:mana_capacity",base:6.0d,operation:"add_value",slot:"mainhand"}]},item_name={text:"Magician Staff"},item_model="netherite_shovel",rarity="rare"]
+```json
+{
+    "type": "minecraft:item",
+    "functions": [
+        {
+            "function": "minecraft:set_components",
+            "components": {
+            "minecraft:custom_data": {
+                "id": "magician_staff:magician_staff"
+            },
+            "minecraft:item_model": "minecraft:netherite_shovel",
+            "modifiers": [
+                {
+                    "attribute":"pentamana:mana_capacity",
+                    "base":6.0,
+                    "operation":"add_value",
+                    "slot":"mainhand"
+                }
+            ],
+            "minecraft:rarity": "rare"
+            }
+        },
+        {
+            "function": "minecraft:set_name",
+            "name": {
+                "text": "Magician Staff"
+            },
+            "target": "item_name"
+        }
+    ],
+    "name": "minecraft:netherite_sword"
+}
 ```
 
 ## Configuration
