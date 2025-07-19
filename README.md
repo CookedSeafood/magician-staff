@@ -1,16 +1,10 @@
 # Magician Staff
 
-Magician Staff is an item that shoots explosive bats following the rotation of the shooter for 4 mana when right-clicked.
+A **magician staff** is a casting weapon that is used to shoot explosive bats.
 
-## Feature
+## Data Controlled
 
-- Rotate the head to rotate the bat.
-- Explode on collision, not on death.
-- Explode if `fuse` = 0.
-
-## The Item
-
-An item where minecraft:custom_data.id is "magician_staff:magician_staff" is considered as an magician staff.
+An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is considered as an magician staff.
 
 An example command that gives an magician staff to yourslef:
 

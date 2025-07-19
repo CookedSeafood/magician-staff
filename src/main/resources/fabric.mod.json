@@ -3,7 +3,7 @@
     "id": "magician-staff",
     "version": "${version}",
     "name": "Magician Staff",
-    "description": "An item that shoots explosive bats following the rotation of the shooter for 4 mana when right-clicked.",
+    "description": "A casting weapon that is used to shoot explosive bats.",
     "authors": [
         {
             "name": "CookedSeafood",

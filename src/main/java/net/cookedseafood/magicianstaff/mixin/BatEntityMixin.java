@@ -4,11 +4,16 @@ import net.cookedseafood.magicianstaff.MagicianStaff;
 import net.cookedseafood.magicianstaff.api.BatEntityApi;
 import net.cookedseafood.magicianstaff.data.MagicianStaffConfig;
 import net.cookedseafood.magicianstaff.world.explosion.ExplosiveBatExplosionBehavior;
+import net.minecraft.entity.AreaEffectCloudEntity;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.passive.BatEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+
+import java.util.Collection;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -78,7 +83,31 @@ public abstract class BatEntityMixin implements BatEntityApi {
             false,
             World.ExplosionSourceType.MOB
         );
+        bat.spawnEffectsCloud();
         bat.discard();
+    }
+
+    @Override
+    public void spawnEffectsCloud() {
+        BatEntity bat = (BatEntity)(Object)this;
+        Collection<StatusEffectInstance> collection = bat.getStatusEffects();
+        if (collection.isEmpty()) {
+            return;
+        }
+
+        AreaEffectCloudEntity areaEffectCloudEntity = new AreaEffectCloudEntity(bat.getWorld(), bat.getX(), bat.getY(), bat.getZ());
+        areaEffectCloudEntity.setRadius(2.5F);
+        areaEffectCloudEntity.setRadiusOnUse(-0.5F);
+        areaEffectCloudEntity.setWaitTime(10);
+        areaEffectCloudEntity.setDuration(300);
+        areaEffectCloudEntity.setPotionDurationScale(0.25F);
+        areaEffectCloudEntity.setRadiusGrowth(-areaEffectCloudEntity.getRadius() / areaEffectCloudEntity.getDuration());
+
+        for (StatusEffectInstance statusEffectInstance : collection) {
+            areaEffectCloudEntity.addEffect(new StatusEffectInstance(statusEffectInstance));
+        }
+
+        bat.getWorld().spawnEntity(areaEffectCloudEntity);
     }
 
     @Override
