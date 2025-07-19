@@ -2,6 +2,26 @@
 
 A **magician staff** is a casting weapon that is used to shoot explosive bats.
 
+## Usage
+
+### Casting Attack
+
+Pressing use while holding a magician staff in main hand shoots an explosive bat and consumes mana.
+
+#### Mana Consumption with Ultilization
+
+| Base Mana Consumption | Utilization I | Utilization II | Utilization III | Utilization IV | Utilization V |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 4.0 | 3.6 | 3.2 | 2.8 | 2.4 | 2.0 |
+
+#### Explosive Bat
+
+An **explosive bat** is a bat that flies forward continuously at the speed of 1 block per tick with the rotation of the caster entity and explodes with power 1 on collision or in 6 seconds.
+
+The bat will not explode on death.
+
+The explosion from the bat does not destroy blocks.
+
 ## Data Controlled
 
 An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is considered as an magician staff.
