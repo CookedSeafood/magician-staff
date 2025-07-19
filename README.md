@@ -14,7 +14,7 @@ A **magician staff** is a casting weapon that is used to shoot explosive bats. I
 
 ### Melee Attack
 
-Same as a netherite sword.
+Same as a [netherite sword](https://minecraft.wiki/w/Netherite_Sword).
 
 ### Casting Attack
 
