@@ -19,7 +19,7 @@ Same as a [netherite sword](https://minecraft.wiki/w/Netherite_Sword).
 
 ### Casting Attack
 
-Pressing use while holding a magician staff in main hand shoots an explosive bat and consumes mana.
+Pressing use while holding a magician staff in main hand shoots an explosive bat and consumes 4 mana.
 
 #### Mana Consumption with Ultilization
 
@@ -35,7 +35,7 @@ The bat will not explode on death.
 
 The explosion from the bat does not destroy blocks.
 
-## Data Controlled
+## Data Powered
 
 An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is considered as an magician staff.
 
