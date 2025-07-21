@@ -23,7 +23,7 @@ public class MagicianStaffConfig {
     public static int reload() {
         String configString;
         try {
-            configString = FileUtils.readFileToString(new File("./config/chorus-staff.json"), StandardCharsets.UTF_8);
+            configString = FileUtils.readFileToString(new File("./config/magician-staff.json"), StandardCharsets.UTF_8);
         } catch (IOException e) {
             reset();
             return 1;
