@@ -5,15 +5,14 @@ import net.cookedseafood.magicianstaff.api.BatEntityApi;
 import net.cookedseafood.magicianstaff.data.MagicianStaffConfig;
 import net.cookedseafood.magicianstaff.world.explosion.ExplosiveBatExplosionBehavior;
 import net.minecraft.entity.AreaEffectCloudEntity;
+import net.minecraft.entity.damage.DamageTypes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.passive.BatEntity;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-
 import java.util.Collection;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -76,7 +75,7 @@ public abstract class BatEntityMixin implements BatEntityApi {
         bat.setDead(true);
         world.createExplosion(
             bat,
-            world.getDamageSources().explosion(bat, bat.getCustomOwner()),
+            world.getDamageSources().create(DamageTypes.EXPLOSION, bat, bat.getCustomOwner()),
             new ExplosiveBatExplosionBehavior(),
             bat.getPos(),
             bat.getCustomExplosionRadius(),
