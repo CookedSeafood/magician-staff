@@ -4,7 +4,6 @@ A **magician staff** is a casting weapon that is used to shoot explosive bats. I
 
 | Statistics ||
 | - | - |
-| Melee Damage | 8 |
 | Casting Damage | 15 (Explosion) |
 | Knockback | 0 |
 | Mana Consumption| 4 |
@@ -12,10 +11,6 @@ A **magician staff** is a casting weapon that is used to shoot explosive bats. I
 | Rarity | Rare |
 
 ## Usage
-
-### Melee Attack
-
-Same as a [netherite sword](https://minecraft.wiki/w/Netherite_Sword).
 
 ### Casting Attack
 
@@ -42,7 +37,7 @@ An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is c
 ### Give Command
 
 ```mcfunction
-/give @s minecraft:netherite_sword[custom_data={id:"magician_staff:magician_staff",modifiers:[{attribute:"pentamana:mana_capacity",base:6.0d,operation:"add_value",slot:"mainhand"}]},item_name={text:"Magician Staff"},item_model="minecraft:netherite_shovel",rarity="rare"]
+/give @s minecraft:stick[custom_data={id:"magician_staff:magician_staff",modifiers:[{attribute:"pentamana:mana_capacity",base:6.0d,operation:"add_value",slot:"mainhand"}]},item_name={text:"Magician Staff"},item_model="minecraft:netherite_shovel",rarity="rare"]
 ```
 
 ### Loot Table Entry
@@ -77,7 +72,7 @@ An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is c
             "target": "item_name"
         }
     ],
-    "name": "minecraft:netherite_sword"
+    "name": "minecraft:stick"
 }
 ```
 
