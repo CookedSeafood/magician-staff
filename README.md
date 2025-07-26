@@ -37,7 +37,7 @@ An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is c
 ### Give Command
 
 ```mcfunction
-/give @s minecraft:stick[custom_data={id:"magician_staff:magician_staff",modifiers:[{attribute:"pentamana:mana_capacity",base:6.0d,operation:"add_value",slot:"mainhand"}]},item_name={text:"Magician Staff"},item_model="minecraft:netherite_shovel",rarity="rare"]
+/give @s minecraft:stick[custom_data={id:"magician_staff:magician_staff",modifiers:[{attribute:"pentamana:mana_capacity",base:6.0d,operation:"add_value",slot:"mainhand"}]},enchantable={value:15},item_name={text:"Magician Staff"},item_model="minecraft:netherite_shovel",rarity="rare"]
 ```
 
 ### Loot Table Entry
@@ -49,19 +49,22 @@ An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is c
         {
             "function": "minecraft:set_components",
             "components": {
-            "minecraft:custom_data": {
-                "id": "magician_staff:magician_staff"
-            },
-            "minecraft:item_model": "minecraft:netherite_shovel",
-            "modifiers": [
-                {
-                    "attribute":"pentamana:mana_capacity",
-                    "base":6.0,
-                    "operation":"add_value",
-                    "slot":"mainhand"
-                }
-            ],
-            "minecraft:rarity": "rare"
+                "minecraft:custom_data": {
+                    "id": "magician_staff:magician_staff",
+                    "modifiers": [
+                        {
+                            "attribute":"pentamana:mana_capacity",
+                            "base":6.0,
+                            "operation":"add_value",
+                            "slot":"mainhand"
+                        }
+                    ],
+                },
+                "minecraft:enchantable": {
+                    "value": 15
+                },
+                "minecraft:item_model": "minecraft:netherite_shovel",
+                "minecraft:rarity": "rare"
             }
         },
         {
