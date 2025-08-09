@@ -32,7 +32,7 @@ The explosion from the bat does not destroy blocks.
 
 ## Data Powered
 
-An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is considered as an magician staff.
+An item where `minecraft:custom_data.id` is "magician_staff:magician_staff" is considered as a magician staff.
 
 ### Give Command
 
