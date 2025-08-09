@@ -16,9 +16,9 @@ A **magician staff** is a casting weapon that is used to shoot explosive bats. I
 
 Pressing use while holding a magician staff in main hand shoots an explosive bat and consumes 4 mana.
 
-#### Mana Consumption with Ultilization
+#### Mana Consumption with Mana Efficiency
 
-| Base Mana Consumption | Utilization I | Utilization II | Utilization III | Utilization IV | Utilization V |
+| Base Mana Consumption | Mana Efficiency I | Mana Efficiency II | Mana Efficiency III | Mana Efficiency IV | Mana Efficiency V |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 4.0 | 3.6 | 3.2 | 2.8 | 2.4 | 2.0 |
 
